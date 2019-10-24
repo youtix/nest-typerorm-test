@@ -1,0 +1,51 @@
+{
+  "name": "lgo",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "copy-resources": "ts-node scripts/copy-resources.ts",
+    "start": "npm run clean && npm run copy-resources && nodemon --watch src -e ts,tsx --exec ts-node src/main.ts"
+  },
+  "dependencies": {
+    "@nestjs/common": "6.8.3",
+    "@nestjs/core": "6.8.3",
+    "@nestjs/jwt": "6.1.1",
+    "@nestjs/passport": "6.1.0",
+    "@nestjs/platform-express": "6.8.3",
+    "@nestjs/swagger": "3.1.0",
+    "@nestjs/typeorm": "6.2.0",
+    "class-transformer": "0.2.3",
+    "class-validator": "0.10.2",
+    "cloud-config-client": "1.4.2",
+    "date-fns": "2.5.1",
+    "dotenv": "8.2.0",
+    "eureka-js-client": "4.5.0",
+    "js-yaml": "3.13.1",
+    "passport": "0.4.0",
+    "passport-jwt": "4.0.0",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "6.5.3",
+    "sqlite3": "4.1.0",
+    "swagger-ui-express": "4.1.2",
+    "typeorm": "0.2.20"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.1",
+    "@types/jest": "24.0.19",
+    "@types/node": "12.11.1",
+    "@types/passport-jwt": "3.0.2",
+    "@types/supertest": "2.0.8",
+    "nodemon": "1.19.4",
+    "rimraf": "3.0.0",
+    "shelljs": "0.8.3",
+    "supertest": "4.0.2",
+    "ts-jest": "24.1.0",
+    "ts-node": "8.4.1",
+    "tsc-watch": "4.0.0",
+    "tsconfig-paths": "3.9.0",
+    "typescript": "3.6.4"
+  }
+}
