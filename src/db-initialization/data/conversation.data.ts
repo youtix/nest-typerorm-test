@@ -5,8 +5,7 @@ import { message1, message2, message3, message4 } from './message.data';
 const conversation1: Conversation = {
   sender: user3,
   reciever: user4,
-  subject: 'Barbec',
-  messages: [message1, message2, message3, message4],
+  messages: [message1],
 };
 
 export { conversation1 };
